@@ -58,7 +58,6 @@ export default function FleetShowcase() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="space-y-12"
       >
-        {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8">
           <div className="space-y-3">
             <span className="text-white/60 font-mono text-xs uppercase tracking-[0.2em] block">
@@ -69,7 +68,6 @@ export default function FleetShowcase() {
             </h2>
           </div>
 
-          {/* Model Switcher Tabs */}
           <div className="flex flex-wrap gap-2">
             {FLEET.map((aircraft) => (
               <button
@@ -88,7 +86,6 @@ export default function FleetShowcase() {
           </div>
         </div>
 
-        {/* Dynamic Model Content */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeModel.id}
@@ -98,7 +95,6 @@ export default function FleetShowcase() {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
           >
-            {/* Left: Aircraft Image inside Glass Frame */}
             <GlassCard className="p-4 overflow-hidden aspect-video lg:aspect-[4/3]" hoverEffect={true}>
               <div className="relative w-full h-full overflow-hidden rounded-2xl bg-neutral-950">
                 <img
@@ -110,7 +106,6 @@ export default function FleetShowcase() {
               </div>
             </GlassCard>
 
-            {/* Right: Spec Details */}
             <div className="space-y-8">
               <div className="space-y-4">
                 <h3 className="text-white font-bold tracking-wider uppercase text-2xl md:text-4xl">
@@ -121,7 +116,6 @@ export default function FleetShowcase() {
                 </p>
               </div>
 
-              {/* Spec Table */}
               <GlassCard className="p-6" hoverEffect={false}>
                 <div className="divide-y divide-white/10 font-mono text-xs md:text-sm">
                   {activeModel.specs.map((spec) => (

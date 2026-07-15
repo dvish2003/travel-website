@@ -63,7 +63,6 @@ export default function ClassComparison() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="space-y-16"
       >
-        {/* Section Header */}
         <div className="text-center space-y-4">
           <span className="text-white/60 font-mono text-xs uppercase tracking-[0.2em] block">
             TRAVEL YOUR WAY
@@ -72,7 +71,6 @@ export default function ClassComparison() {
             Choose Your Class
           </h2>
 
-          {/* Class Switcher Pill */}
           <div className="inline-flex rounded-full border border-white/10 p-1.5 bg-white/5 mt-4">
             {CLASSES.map((cls) => (
               <button
@@ -91,7 +89,6 @@ export default function ClassComparison() {
           </div>
         </div>
 
-        {/* Content Box */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeClassTab.id}
@@ -102,17 +99,15 @@ export default function ClassComparison() {
           >
             <GlassCard className="p-8 md:p-12 overflow-hidden" hoverEffect={false}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                {/* Left: Class Image */}
                 <div className="relative aspect-video lg:aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 border border-white/10">
                   <img
-                    src={activeClassTab.image}
-                    alt={activeClassTab.name}
-                    className="w-full h-full object-cover grayscale contrast-115 brightness-90 transition-transform duration-700 hover:scale-105"
+                     src={activeClassTab.image}
+                     alt={activeClassTab.name}
+                     className="w-full h-full object-cover grayscale contrast-115 brightness-90 transition-transform duration-700 hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                 </div>
 
-                {/* Right: Feature Checklist */}
                 <div className="flex flex-col justify-between h-full space-y-8">
                   <div className="space-y-6">
                     <h3 className="text-white font-mono font-bold tracking-wider uppercase text-xl md:text-2xl border-b border-white/10 pb-4">
@@ -132,7 +127,6 @@ export default function ClassComparison() {
                     </ul>
                   </div>
 
-                  {/* Pricing and CTA */}
                   <div className="flex flex-wrap items-center justify-between gap-6 border-t border-white/10 pt-6 mt-auto">
                     <div>
                       <span className="block text-[10px] text-white/40 uppercase tracking-widest font-mono">

@@ -37,7 +37,6 @@ export default function Destinations() {
 
   return (
     <section id="destinations" className="relative z-10 py-24 md:py-32 max-w-7xl mx-auto px-6 md:px-12">
-      {/* Scroll Entrance Animation Wrapper */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +44,6 @@ export default function Destinations() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="space-y-12"
       >
-        {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-3">
             <span className="text-white/60 font-mono text-xs uppercase tracking-[0.2em] block">
@@ -85,16 +83,13 @@ export default function Destinations() {
           </div>
         </div>
 
-        {/* Content Layouts */}
         {layoutMode === "grid" ? (
-          // Grid View (Default for Desktop)
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {DESTINATIONS.map((dest, i) => (
               <DestinationCard key={dest.city} dest={dest} index={i} />
             ))}
           </div>
         ) : (
-          // Carousel View (Horizontal Scroll Snap)
           <div className="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scroll-smooth scrollbar-thin scrollbar-thumb-white/10">
             {DESTINATIONS.map((dest, i) => (
               <div key={dest.city} className="min-w-[280px] sm:min-w-[320px] snap-start flex-1">
@@ -118,7 +113,6 @@ function DestinationCard({ dest, index }: { dest: typeof DESTINATIONS[0]; index:
       className="group"
     >
       <GlassCard className="h-full overflow-hidden flex flex-col" hoverEffect={true}>
-        {/* Full-Bleed Image Frame */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-t-[23px] border-b border-white/10 bg-neutral-900">
           <img
             src={dest.image}
@@ -129,7 +123,6 @@ function DestinationCard({ dest, index }: { dest: typeof DESTINATIONS[0]; index:
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
 
-        {/* Body Info */}
         <div className="p-6 flex flex-col justify-between flex-1 relative">
           <div className="space-y-1">
             <h3 className="text-white font-bold font-mono tracking-wider uppercase text-lg group-hover:text-white transition-colors duration-300">

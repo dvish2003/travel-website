@@ -37,12 +37,10 @@ const TESTIMONIALS = [
 ];
 
 export default function Testimonials() {
-  // Duplicate testimonials array for continuous loop
   const marqueeItems = [...TESTIMONIALS, ...TESTIMONIALS, ...TESTIMONIALS];
 
   return (
     <section className="relative z-10 py-24 md:py-32 overflow-hidden">
-      {/* Inject custom styling for marquee animation to keep the component fully modular */}
       <style jsx global>{`
         @keyframes marquee {
           0% {
@@ -80,13 +78,10 @@ export default function Testimonials() {
         </motion.div>
       </div>
 
-      {/* Marquee Row Container */}
       <div className="w-full relative flex overflow-hidden">
-        {/* Soft fading gradient edges */}
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-black to-transparent z-20 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-black to-transparent z-20 pointer-events-none" />
 
-        {/* Marquee Inner Track */}
         <div className="flex gap-6 animate-marquee-scroll hover:[animation-play-state:paused] py-4">
           {marqueeItems.map((test, index) => (
             <div
@@ -95,20 +90,17 @@ export default function Testimonials() {
             >
               <GlassCard className="p-8 h-full flex flex-col justify-between" hoverEffect={true}>
                 <div className="space-y-6">
-                  {/* Rating */}
                   <div className="flex gap-1">
                     {Array.from({ length: test.rating }).map((_, i) => (
                       <Star key={i} className="w-3.5 h-3.5 fill-white text-white" />
                     ))}
                   </div>
 
-                  {/* Quote */}
                   <p className="text-white/70 italic text-sm font-light leading-relaxed">
                     &quot;{test.quote}&quot;
                   </p>
                 </div>
 
-                {/* Profile */}
                 <div className="flex items-center gap-4 mt-8 border-t border-white/10 pt-4">
                   <div className="w-10 h-10 rounded-full overflow-hidden border border-white/20 bg-neutral-900">
                     <img
