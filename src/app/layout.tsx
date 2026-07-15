@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SkyLuxe Airline | Premium Air Travel",
-  description: "High-performance scroll-animated canvas image scroller for premium travel.",
+  description: "Experience luxury air travel with SkyLuxe. Premium cabins, exceptional service, and unforgettable journeys. Book your next flight today.",
 };
 
 export default function RootLayout({
