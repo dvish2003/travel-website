@@ -9,7 +9,7 @@ const FLEET = [
     id: "a350",
     name: "Airbus A350-1000",
     desc: "The ultimate modern widebody flagship. Engineered with advanced aerodynamics and carbon-fibre composites, offering exceptional fuel efficiency, quietest-in-class cabin atmosphere, and state-of-the-art entertainment capabilities.",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop",
+    image: "/images/fleet/a350.jpg",
     specs: [
       { label: "Maximum Range", value: "16,100 km" },
       { label: "Cruise Speed", value: "Mach 0.85 (903 km/h)" },
@@ -22,7 +22,7 @@ const FLEET = [
     id: "b787",
     name: "Boeing 787 Dreamliner",
     desc: "A revolution in passenger flight comfort. The Dreamliner is renowned for its larger dimmable windows, cleaner cabin air with higher humidity levels, and specialized design that reduces flight turbulence fatigue.",
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop",
+    image: "/images/fleet/b787.jpg",
     specs: [
       { label: "Maximum Range", value: "14,140 km" },
       { label: "Cruise Speed", value: "Mach 0.85 (903 km/h)" },
@@ -35,7 +35,7 @@ const FLEET = [
     id: "g700",
     name: "Gulfstream G700",
     desc: "The pinnacle of private executive travel. Offering a spacious, ultra-refined cabin with up to five living areas, bespoke seating layouts, and a clean-air system refreshing cabin atmosphere every two minutes.",
-    image: "https://images.unsplash.com/photo-1583000211279-1d64589d76a1?q=80&w=800&auto=format&fit=crop",
+    image: "/images/fleet/g700.jpg",
     specs: [
       { label: "Maximum Range", value: "13,890 km" },
       { label: "Cruise Speed", value: "Mach 0.90 (956 km/h)" },

@@ -11,7 +11,7 @@ const CLASSES = [
     id: "economy",
     name: "Economy Class",
     price: "$550",
-    image: "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?q=80&w=800&auto=format&fit=crop",
+    image: "/images/classes/economy.jpg",
     features: [
       "Ergonomic seats with adjustable headrests",
       "Complimentary hot meals and beverages",
@@ -25,7 +25,7 @@ const CLASSES = [
     id: "business",
     name: "Business Class",
     price: "$1,850",
-    image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=800&auto=format&fit=crop",
+    image: "/images/classes/business.jpg",
     features: [
       "Fully flat-bed seats with luxury bedding",
       "Gourmet dine-on-demand chef menu",
@@ -39,7 +39,7 @@ const CLASSES = [
     id: "first",
     name: "First Class",
     price: "$4,200",
-    image: "https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=800&auto=format&fit=crop",
+    image: "/images/classes/first.jpg",
     features: [
       "Private sliding-door suite with ambient lighting",
       "Pre-flight caviar service & vintage Champagne",

@@ -10,25 +10,25 @@ const DESTINATIONS = [
     city: "Tokyo",
     country: "Japan",
     price: "$1,250",
-    image: "https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?q=80&w=600&auto=format&fit=crop",
+    image: "/images/destinations/tokyo.jpg",
   },
   {
     city: "Paris",
     country: "France",
     price: "$980",
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600&auto=format&fit=crop",
+    image: "/images/destinations/paris.jpg",
   },
   {
     city: "Reykjavik",
     country: "Iceland",
     price: "$1,450",
-    image: "https://images.unsplash.com/photo-1504829857797-ddff28127792?q=80&w=600&auto=format&fit=crop",
+    image: "/images/destinations/reykjavik.jpg",
   },
   {
     city: "New York",
     country: "United States",
     price: "$850",
-    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=600&auto=format&fit=crop",
+    image: "/images/destinations/newyork.jpg",
   },
 ];
 
